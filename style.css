@@ -1,0 +1,171 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%; /* Ensures both html and body take up the full viewport height */
+    margin: 0; /* Removes any default margin */
+  }
+  
+  body {
+    background-color: rgb(113, 124, 208);
+    height: 10vh; /* Now the body will take up 10% of the viewport height */
+  }
+nav{
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 45px;
+}
+.logo img{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+nav ul li{
+    padding: 0 10px;
+    font-size: 13px;
+}
+.container{
+   min-height: 67vh;
+   min-width: 800px;
+   display: flex;
+   width: 500px;
+   justify-content: flex-start;
+   color: white;
+   margin: 17px auto;
+   padding: 0;
+   border-radius: 12px;
+   background-image: url(images/arjit1.jpg);        
+   background-position: 125% 4%;
+}
+.songItemContainer{
+    display: flex;
+    flex-direction: column;
+    background-color:transparent;
+    color:white;
+    height: 430px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: left;
+    padding: 2px;
+    border-radius: 30px;
+    margin:20px 0;
+    overflow: hidden;
+}
+.songItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.songName{
+    width: 150px;
+}
+.songItem span {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+.songItem img{
+    width: 30px;
+    border-radius: 40px;
+    margin-right: 8px;
+}
+.timeStamp{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    position: relative;
+    right: 10px;
+}
+
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color:rgb(18, 2, 2);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;    
+    padding: 10px;
+}
+#progressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+#volumeBar{
+    display:flex;
+    position: absolute;
+    left: 300px;
+    bottom: 40px;
+    height: 20px;
+    cursor: pointer;
+    background:linear-gradient(to right, #ca0d9b,white);
+
+    appearance: none; /* Removes default styling in Chrome, Safari, and Opera */
+    width: 100px;
+    height: 10px;    
+    outline: none;
+    border-radius: 5px;
+    
+}
+
+.icon{
+    margin: 15px 20px;
+    fill: rgb(67, 62, 62);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+#volume{
+    height: 35px;
+    width: 35px;
+    display:flex;
+    position: absolute;
+    left: 260px;
+    bottom: 30px;
+}
+#loop{
+    height: 25px;
+    width: 25px;
+    display:flex;
+    position: absolute;
+    right: 250px;
+    bottom: 30px;
+   
+}
+.songInfo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+#gif,
+#gif1{
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+#nav{
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+#back:hover,
+#play:hover,
+#next:hover{
+    zoom: 102%;
+    cursor: pointer;
+}
+
+
+
+
